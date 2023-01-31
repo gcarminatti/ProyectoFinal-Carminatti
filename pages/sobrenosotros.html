@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+     <!--Boostrap Link-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+     <!--JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      
+     <!--CSS Link -->
+      <link rel="stylesheet" href="/css/style.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+     <title>HT Ecommerce - Mas de 10 milproductos</title>
+     <meta name="description" content="HT Ecommerce - Comercio electronico con mas de 10 mil productos disponibles con envios en el dia"/>
+     <meta name="keywords" content="Compras,ventas,Compras economicas, venta de productos, comercio electronico "/>
+     <meta name="author" content="Gianluca Carminatti" />
+     <meta name="copyright" content="Copyright owner" />
+</head>
+<body>
+
+    <!--Navbar section-->
+  
+    <nav class="navbar navbar-expand-lg p-4 mb-2 navbar-dark" id="navbarBlack">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="/imagenes/logo.png" alt="Logo Empresa" width="180" height="150" >
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            
+            <li class="nav-item dropdown" >
+             <a class="nav-link dropdown-toggle p-2 mb-2 bg-danger text-white rounded" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                Categorias</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown">
+                      <li><a class="dropdown-item" href="#">Informatica</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Componentes</a></li>
+                <li><a class="dropdown-item" href="#">Computadoras y Laptops</a></li>
+                <li><a class="dropdown-item" href="#">Perifericos</a></li>
+                <li><a class="dropdown-item" href="#">Software</a></li>
+                <li><a class="dropdown-item" href="#">Articulos Varios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Telefonia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Celulares</a></li>
+                <li><a class="dropdown-item" href="#">Cases</a></li>
+                <li><a class="dropdown-item" href="#">Protectores</a></li>
+                <li><a class="dropdown-item" href="#">Cables</a></li>
+                <li><a class="dropdown-item" href="#">Adaptadores</a></li>
+                <li><a class="dropdown-item" href="#">Articulos Varios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Vestimenta y articulos varios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                <li><a class="dropdown-item" href="#">Articulos Varios</a></li>
+
+
+              </ul>
+         
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/politicadegarantia.html">Garantia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Contacto.html">Contacto</a>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav me-1 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cuenta</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown">
+                      <li><a class="dropdown-item" href="#">Panel de Usuario</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="/pages/ayuda.html">Ayuda</a></li>
+                <li><a class="dropdown-item" href="/pages/sobrenosotros.html">Sobre la empresa</a></li>
+                <li><a class="dropdown-item" href="#">Dejanos un Comentario</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
+            <button type="button" class="btn btn-primary btn-lg bi bi-search"></button>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+
+
+     <!-- Comienzo de Slider-->   
+      
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source media="(max-width: 735px)" srcset="/imagenes/slider/geforcertx4080aorus-480w.jpg" alt="Tarjeta grafica 4080 Aorus">
+            <source media="(min-width: 736px)" srcset="/imagenes/slider/nbgamingasusg15.jpg">
+            <img src="/imagenes/slider/nbgamingasusg15.jpg" alt=" Notebook Gaming Asus 15" style="width: 100%;">
+          </picture>
+          <!-- <img src="imagenes/slider/notebook.png" class="d-block w-100" id="carouselImage" alt="Notebook Gamer Asus ROG STRIX "> -->
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source media="(max-width: 735px)" srcset="/imagenes/slider/ramnetacrgb-480w.jpg" alt="Memoria Ram Netca RGB">
+            <source media="(min-width: 736px)" srcset="/imagenes/slider/coolerasusrgb.jpg">
+            <img src="/imagenes/slider/coolerasusrgb.jpg" alt="Cooler Asus CPU RGB" style="width: 100%;">
+          </picture>
+          <!-- <img src="imagenes/slider/sw.png" class="d-block w-100" alt="Silla de escritorio Star Wars Edicion Limitada"> -->
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source media="(max-width: 735px)" srcset="/imagenes/slider/monitorsamsung34-480w.jpg" alt=" Monitor Samsung 34 pulgadas">
+            <source media="(min-width: 736px)" srcset="/imagenes/slider/tecladocorsairproxt.jpg">
+            <img src="/imagenes/slider/tecladocorsairproxt.jpg" alt="Teclado Corsair PRO XT" style="width: 100%;">
+          </picture>
+          <!-- <img src="imagenes/slider/teclado.png" class="d-block w-100" alt="Teclado Thermaltake Level 20 RGB "> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+<!--Linea Divisora-->
+
+<div class="Title" id="fondoDivisor">
+  <div class="clearfix" >
+    <hr class="linea-gris-claro">
+      <h2 class="text-white" id="divisor"><strong>Nuestra Empresa - HT Ecommerce</strong></h2>
+      <hr class="linea-gris-claro">
+  </div>
+</div>
+
+
+<!-- Comienzo Nuestra Empresa-->
+
+<section id="nosotros">
+    <div id="imagen-sobrenosotros">
+        <h3 id="tituloEmpresa">Nuestra Empresa</h3>
+        <p id="descripcionEmpresa">Somos una empresa familiar dedicada a la  tecnología que ofrece servicios vinculados principalmente al comercio electrónico y a los pagos digitales.
+ 
+           Somos una empresa dedicada a la importación y comercialización de productos tecnológicos. Acercamos a todos  productos líderes en innovación y desarrollo que impactan en su comodidad y calidad de vida. Nuestra dirección técnica está integrada por ingenieros en sistemas, lo cual garantiza el expertise dentro del área en que operamos.
+        
+           Términos y Condiciones
+           Estos términos y condiciones y los anexos que explican los servicios del Ecosistema MELI (de ahora en más: “Términos y Condiciones”) regulan la relación entre HT-Ecommerce y las  personas que usan sus servicios (“Personas Usuarias”). 
+
+           Las Personas Usuarias aceptan estos Términos y Condiciones desde el momento en que se registran en el Sitio y usan el Ecosistema MELI.
+
+           Cuando debamos hacer cambios importantes en nuestros servicios, publicaremos las modificaciones con 10 días corridos de anticipación para que las Personas Usuarias puedan revisarlas y seguir usando el Ecosistema MELI. En ningún caso afectarán las operaciones que ya hayan finalizado.
+
+           Las Personas Usuarias que no tengan obligaciones pendientes con HT-Ecommerce o con otras Personas Usuarias, podrán finalizar la relación con HT-Ecommerce cancelando su cuenta.
+        </p>      
+    </div>
+ 
+    
+
+</section>
+
+   <!-- Subscribe -->
+ 
+   <section class="subscribe-area pb-50 pt-70">
+    <div class="container">
+      <div class="row">
+    
+              <div class="col-md-4">
+                <div class="subscribe-text mb-15">
+                  <span>Susbscribete a nuestro newsletter</span>
+                  <h2>Newsletter</h2>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input placeholder="Ingresa tu correo electronico" type="email">
+                      <button>Confirmar <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+    </section>
+
+
+  
+<!----------- Footer ------------>
+<footer class="footer-bs">
+  <div class="row">
+    <div class="col-md-3 footer-brand animated fadeInLeft">
+      <img id="footer-logo" src="/imagenes/logo.png" class="img-responsive" alt="Logo empresa - HT Ecommerce">
+      <p>Somos una empresa dedicada al negocio E-commerce desde 2005, contamos con mas de 10.000 publicaciones disponibles a tu disposicion</p>
+      <p>© 2005 , All rights reserved</p>
+  </div>
+  <div class="col-md-4 footer-nav animated fadeInUp">
+    <h4>Menu —</h4>
+    <div class="col-md-6">
+          <ul class="pages">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="Contacto.html">Contacto</a></li>
+              <li><a href="ayuda.html">Ayuda</a></li>
+              <li><a href="#">Cuenta</a></li>
+              <li><a href="#">Carrito</a></li>
+          </ul>
+      </div>
+    <div class="col-md-6">
+          <ul class="list">
+              <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+              <li><a href="#">Atencion al cliente</a></li>
+              <li><a href="#">Terminos y condiciones</a></li>
+              <li><a href="politicadegarantia.html">Politicas de Garantia</a></li>
+              </ul>
+          </div>
+      </div>
+    <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>Seguinos</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik-Tok</a></li>
+          </ul>
+      </div>
+    <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4>Buscar</h4>
+          <p>Utiliza palabras claves para mejorar la busqueda</p>
+          <p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="	glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+           </p>
+      </div>
+  </div>
+  </footer>
+
+</body>
+</html>
