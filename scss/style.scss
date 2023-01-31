@@ -370,8 +370,31 @@ h2 {
  }
  
 
+ /*Pagina Ayuda*/
 
+ #tituloAyuda {
+  font-weight: bold;
+  margin-left: 1%;
 
+ }
+
+ /*Pagina Garantia*/
+ 
+ #titulogarantia {
+  font-weight: bold;
+  margin-left: 1%;
+ }
+
+/*Pagina Nuestra empresa*/
+
+#tituloEmpresa {
+  font-weight: bold;
+  margin-left: 1%;
+}
+
+#descripcionEmpresa {
+  margin-left: 1%;
+}
 
  /* Pagina Formulario de contacto*/
 
@@ -548,7 +571,7 @@ font-weight: bold;
   .card-content img {
     width: 180px;
     height: 180px;
-    margin-left: 5%;
+    margin-left: 15%;
   }
 
   .card .card-title {
