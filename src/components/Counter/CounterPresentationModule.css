@@ -1,0 +1,20 @@
+#minusButton #plusButton {
+ 
+    display: inline-block;
+
+}
+
+#counterDisplay {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+}
+#addToCartButton {
+    margin-left: 10px;
+    display: inline-block;
+}

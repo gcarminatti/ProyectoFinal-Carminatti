@@ -1,0 +1,51 @@
+
+
+
+.btnContainer {
+display: flex;
+flex-direction: row;
+margin-top: 10px;
+gap:5px
+}
+
+/*Botones carrito */
+.cartSumarryButtons{
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+	gap: 20px;
+	margin-right: 60px;
+}
+
+
+
+
+
+/* Botones carrito vista*/
+.botonesItemCart{
+display: flex;
+
+}
+
+@media (min-width: 768px) {
+	.shopping-cart .items .product .info {
+		padding-top: 25px;
+		text-align: left; 
+	}
+
+	.shopping-cart .items .product .info .price {
+		font-weight: bold;
+		font-size: 22px;
+		top: 17px; 
+	}
+
+	.shopping-cart .items .product .info .quantity {
+		text-align: center; 
+	}
+	.shopping-cart .items .product .info .quantity .quantity-input {
+		padding: 4px 10px;
+		text-align: center; 
+	}
+}
+
+
