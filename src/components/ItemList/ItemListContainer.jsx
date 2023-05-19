@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import ItemListPresentation from "./itemListPresentation";
-import { productos } from "../../productsMock";
 import { useParams } from "react-router-dom";
 import { getDb } from "../../FireBaseConfig";
 import { getDocs, collection, query, where } from "firebase/firestore";

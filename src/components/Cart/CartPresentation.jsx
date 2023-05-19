@@ -1,4 +1,3 @@
-import { productos } from "../../productsMock";
 import cartStyles from "./CartPresentation.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
