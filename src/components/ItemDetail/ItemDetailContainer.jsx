@@ -5,9 +5,11 @@ import { CartContext } from "../../context/CartContext";
 import { getDb } from "../../FireBaseConfig";
 import { getDoc, collection, doc } from "firebase/firestore";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   //Traer productos por id
+  const navigate = useNavigate();
   const [product, setProduct] = useState({});
 
   const { agregarAlCarrito, getQuantityById } = useContext(CartContext);
@@ -36,13 +38,32 @@ const ItemDetailContainer = () => {
     };
 
     agregarAlCarrito(data);
+
     Swal.fire({
-      position: "center",
-      icon: "success",
       title: `${product.titulo} agregado al carrito`,
-      showConfirmButton: false,
-      timer: 1500,
+      showCancelButton: true,
+      confirmButtonText: "Ir al carrito",
+      cancelButtonText: "Seguir comprando",
+      showCloseButton: true,
+      showLoaderOnConfirm: true,
+      allowOutsideClick: false,
+      iconColor: "blue",
+      allowEscapeKey: false,
+      preConfirm: () => {
+        agregarAlCarritoSweet();
+      },
     });
+
+    const agregarAlCarritoSweet = () => {
+      navigate("/cart");
+    };
+    // Swal.fire({
+    //   position: "center",
+    //   icon: "success",
+    //   title: `${product.titulo} agregado al carrito`,
+    //   showConfirmButton: false,
+    //   timer: 1500,
+    // });
   };
 
   let cantidadTotal = getQuantityById(product.id);

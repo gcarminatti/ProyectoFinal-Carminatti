@@ -45,14 +45,3 @@ const ItemListContainer = () => {
 };
 
 export default ItemListContainer;
-
-// useEffect(() => {
-//   const productsFilter = productos.filter(
-//     (item) => item.categoria === categoriaNombre
-//   );
-//   const tarea = new Promise((resolve, reject) => {
-//     resolve(categoriaNombre ? productsFilter : productos);
-//   });
-
-//   tarea.then((res) => setItems(res)).catch((error) => console.log(error));
-// }, [categoriaNombre]);

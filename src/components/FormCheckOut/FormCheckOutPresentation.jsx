@@ -53,9 +53,7 @@ const FormCheckOutPresentation = ({ handleSubmit, handleChange, errors }) => {
                   name="Email"
                   onChange={handleChange}
                 />
-                <div class="invalid-tooltip">
-                  Please choose a unique and valid username.
-                </div>
+                <div class="invalid-tooltip"></div>
               </div>
             </div>
           </div>

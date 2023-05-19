@@ -12,7 +12,7 @@ const ItemListPresentation = ({ items }) => {
         return (
           <div className="container-fluid mt-5 mb-5">
             <div className=" row-cols-sm-2 row-cols-md-4 row-cols-lg-1 g-4">
-              <div className=" col">
+              <div className=" col ">
                 <div className="card h-100">
                   <div className="card-body">
                     <div className="card-img-actions">
